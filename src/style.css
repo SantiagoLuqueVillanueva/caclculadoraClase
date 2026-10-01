@@ -1,0 +1,96 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #1e1e1e;
+  background-color: #f0f0f0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.calculadora {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.teclado{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.teclado button{
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.teclado button:hover{
+  background-color: #555;
+}
+
+.teclado .span-two{
+  grid-column: span 2;
+}
+
+.teclado .operation{
+  background-color: #f57c00;
+}
+
+.teclado .operation:hover{
+  background-color: #ff9800;
+}
+
+.teclado .delete {
+  background-color: #d32f2f;
+}
+
+.teclado .delete:hover {
+  background-color: #f44336;
+}
+
+.teclado .equals {
+  background-color: #a0a0a0;
+}
+
+
+.teclado .reset {
+  background-color: #d5d513;
+  color:#000000;
+}
+
+.teclado .reset:hover {
+  background-color: #ffff00;
+}
+
+.calculadora .display {
+  margin-bottom: 20px;
+}
+
+.calculadora .display .display-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+} 
